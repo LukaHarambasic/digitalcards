@@ -2,7 +2,7 @@
   <div class="overview">
     <ul>
       <li v-for="card in cards" :key="card.slug">
-        <a :href="card.fullURL">{{ card.slug }}</a>
+        <nuxt-link :to="card.path">{{ card.slug }}</nuxt-link>
       </li>
     </ul>
   </div>
@@ -12,17 +12,8 @@
 export default {
   name: 'IndexPage',
   async asyncData({ $content, params }) {
-    // TODO ENV
-    const PRODUCTION_URL = 'https://your-domain.de'
-    const rawCards = await $content(params.folder).fetch()
-    const cards = rawCards.map((card) => {
-      return {
-        ...card,
-        fullURL: `${PRODUCTION_URL}${card.path}`,
-      }
-    })
     return {
-      cards,
+      cards: await $content(params.folder).fetch(),
     }
   },
 }

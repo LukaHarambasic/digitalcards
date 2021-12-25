@@ -1,0 +1,19 @@
+:root {
+  --c-primary: #8d1514;
+  --c-accent: #b1cbbb;
+  --c-surface: #ddeaed;
+  --c-grey: #bdb7b5;
+  --c-dark: #17161c;
+  --c-light: #ffffff;
+
+  --c-shadow: rgba(46, 46, 62, 0.05);
+
+  --transition: all 0.15s ease-in-out;
+  --border-radius: 0.25rem;
+  --border: 2px solid var(--c-dark);
+
+  --size-default: 60rem;
+  --breakpoint-default: calc(var(--size-default) + 16rem);
+  --size-wide: 78rem;
+  --breakpoint-wide: calc(var(--size-wide) + 16rem);
+}
