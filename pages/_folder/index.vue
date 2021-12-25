@@ -13,7 +13,7 @@ export default {
   name: 'IndexPage',
   async asyncData({ $content, params }) {
     // TODO ENV
-    const PRODUCTION_URL = 'https://postcards.harambasic.de'
+    const PRODUCTION_URL = 'https://your-domain.de'
     const rawCards = await $content(params.folder).fetch()
     const cards = rawCards.map((card) => {
       return {
