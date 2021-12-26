@@ -1,3 +1,5 @@
+import { routes } from './assets/js/routes'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -43,4 +45,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  // Generate Configuration: https://nuxtjs.org/docs/configuration-glossary/configuration-generate
+  generate: {
+    // routes for secret (aka not linked) pages need to be manually generated: https://nuxtjs.org/docs/configuration-glossary/configuration-generate/#routes
+    routes,
+  },
 }
