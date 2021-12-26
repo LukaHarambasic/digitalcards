@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'FolderPage',
   async asyncData({ $content, params }) {
     return {
       cards: await $content(params.folder).fetch(),
