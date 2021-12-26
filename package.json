@@ -12,7 +12,9 @@
     "lint": "npm run lint:js && npm run lint:prettier",
     "lintfix": "prettier --write --list-different . && npm run lint:js --fix",
     "generateCard": "node scripts/generate-card/index.js",
-    "gc": "npm run generateCard"
+    "gc": "npm run generateCard",
+    "listCards": "node scripts/list-cards/index.js",
+    "lc": "npm run listCards"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",

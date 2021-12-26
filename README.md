@@ -21,7 +21,7 @@ Share digital cards with family, friends and everybody else.
 
 - Create new cards with `npm run generateCard` / `npm run gc` or manually by adding new `.md` files to the corresponding categories
 - For the first time you will be asked how your first category should be called, e.g. `2021-christmas`
-- You also can create new categories directly from the command line, choose option __1__.
+- You also can create new categories directly from the command line, choose option **1**.
 - For each new card you generate you will be asked which category it belongs to
 
 ### Deploying
@@ -29,6 +29,10 @@ Share digital cards with family, friends and everybody else.
 - If you used one of the buttons you are done - everything you publish on `main` will be published
 - You also can manually connect your repository to Neltify/Vercel or similar services
 - If you are here you will know what you ahve to do :D
+
+### Sharing
+
+- Get all URLs by running `npm run listCards` / `npm run lc`
 
 ## Next steps
 

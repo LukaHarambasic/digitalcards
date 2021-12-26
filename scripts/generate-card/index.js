@@ -30,19 +30,19 @@ const generateCard = (folder) => {
       mkdirSync(`${CONTENT_PATH}/${newFolderName}`)
       generateCard(newFolderName)
     } else {
-      const foldersWithCreateoption = ['Create new folder', ...folders]
+      const foldersWithCreateOption = ['Create new folder', ...folders]
       const index = readlineSync.keyInSelect(
-          foldersWithCreateoption,
+        foldersWithCreateOption,
         'Which folder do you want?'
       )
       if (index === 0) {
         const newFolderName = readlineSync.question(
-            'How should your the folder be named? '
+          'How should your the folder be named? '
         )
         mkdirSync(`${CONTENT_PATH}/${newFolderName}`)
         generateCard(newFolderName)
       } else {
-        generateCard(folders[index])
+        generateCard(foldersWithCreateOption[index])
       }
     }
   } catch (error) {
