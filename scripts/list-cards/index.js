@@ -11,12 +11,14 @@ const printAbsoluteRoutes = (baseURL, route) =>
   try {
     const baseURL = readlineSync.question('What is the base URL? ')
     const categories = readdirSync(`${CONTENT_PATH}`)
-    const routes = categories.map((category) => {
-      return readdirSync(`${CONTENT_PATH}/${category}`).map((file) => {
-        const slug = file.replace('.md', '')
-        return `${category}/${slug}`
+    const routes = categories
+      .map((category) => {
+        return readdirSync(`${CONTENT_PATH}/${category}`).map((file) => {
+          const slug = file.replace('.md', '')
+          return `${category}/${slug}`
+        })
       })
-    }).flat()
+      .flat()
     const categoriesWithAllOption = ['All', ...categories]
     const index = readlineSync.keyInSelect(
       categoriesWithAllOption,
