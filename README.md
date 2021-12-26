@@ -28,7 +28,7 @@ Share digital cards with family, friends and everybody else.
 
 - If you used one of the buttons you are done - everything you publish on `main` will be published
 - You also can manually connect your repository to Neltify/Vercel or similar services
-- If you are here you will know what you ahve to do :D
+- If you are here you will know what you have to do :D
 
 ### Sharing
 
@@ -37,7 +37,7 @@ Share digital cards with family, friends and everybody else.
 ## Next steps
 
 - [ ] Add theming (open for suggestions)
-- [ ] Easy way of link sharing (UUIDs are way too long, but I also don't want to provide an overview as than everybody easily could find all other cards)
+- [x] Easy way of link sharing (UUIDs are way too long, but I also don't want to provide an overview as than everybody easily could find all other cards)
 
 ## Credits
 
